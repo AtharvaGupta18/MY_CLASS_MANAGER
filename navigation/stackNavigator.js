@@ -4,6 +4,8 @@ import Login from '../LoginScreens/login';
 import ForgetPassword from '../LoginScreens/forget_password';
 import SignUp from '../LoginScreens/SignUp';
 import Home from '../screens/home';
+import StudentManager from '../screens/studentManager';
+import NewClass from '../screens/createNew'
 
 const Stack = createStackNavigator();
 
@@ -14,6 +16,9 @@ const StackNavigator = () => {
 			<Stack.Screen name="SignUp" component={SignUp} />
 			<Stack.Screen name="Forget" component={ForgetPassword} />
 			<Stack.Screen name="Home" component={Home} />
+			<Stack.Screen name='StudentManager' component={StudentManager}/>
+			<Stack.Screen name='NewClass' component={NewClass}/>
+			
 		</Stack.Navigator>
 	);
 }
